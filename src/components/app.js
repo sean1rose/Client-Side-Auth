@@ -7,7 +7,7 @@ export default class App extends Component {
     return (
       <div>
         <Header />
-        Redux simple starter
+        {this.props.children}
       </div>
     );
   }

@@ -1,7 +1,8 @@
 module.exports = {
   entry: [
     './src/index.js',
-    'webpack/hot/dev-server'
+    'webpack/hot/dev-server',
+    'react-hot-loader/patch'
   ],
   output: {
     path: __dirname,
@@ -13,7 +14,7 @@ module.exports = {
     {
       test: /\.(js|jsx)/,
       exclude: /node_modules/,
-      loader: "react-hot"
+      loader: "react-hot-loader/webpack"
     },
     {
       exclude: /node_modules/,
